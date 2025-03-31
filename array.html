@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>arrayTraversing</title>
+</head>
+<body>
+
+  <input type="name" id="element">
+  <button onClick="getElement()">click</button>
+  <script>
+    let num = [1,3,22,44,2,3,13,323]
+    function getElement(){
+    let ele = document.getElementById('element').value;
+    if(ele<num.length && typeof parseInt(ele)==="number" && ele >=0){
+      alert(num[el])
+    }else{
+      alert('oops')
+    }
+  }
+
+  </script>
+</body>
+</html>

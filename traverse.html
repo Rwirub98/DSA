@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Traverse</title>
+</head>
+<body>
+  <input type="text" id="element">
+  <button onClick="getElement()">get Element</button>
+  
+  <script>
+    let nums=[2,1,3,4,5,3]
+    /*for(i=0; i<nums.length;i++){
+    document.write(nums[i])
+    }*/
+    function getElement()
+{
+  let el = document.getElementById('element').value
+  alert(nums[el])
+}
+
+  </script>
+</body>
+</html>

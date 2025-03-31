@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>insertArray</title>
+</head>
+<body>
+  <input type="text" id="position" placeholder="new position">
+  <input type="text" id= "newE" placeholder="new element">
+  <button onClick="insertE()">insert</button>
+
+  <script>
+    function insertE(){
+      let num=[1,2,3,4,5]
+      let newNum = parseInt(document.getElementById('newE').value)
+      let position = parseInt(document.getElementById('position').value);
+       
+      for(let i=num.length - 1  ;i>=0;i--){
+        if (i>=position){
+          num[i+1]=num[i];
+          if(i==position){
+            num[i]=newNum;
+          }
+        }
+      }
+      console.log(num)
+    }
+  </script>
+</body>
+</html>

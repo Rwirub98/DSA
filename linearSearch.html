@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+ <input text="search" placeholder="search" id ="searchEl">
+<button onclick="searchEl()"> searchElement</button>
+
+   <script>
+
+function searchEl(){
+
+    let arr =[12,23,33,44,21,78,54,33,55]
+    let num = 33
+    let position = []
+
+    for (let i = 0; i<arr.length-1; i++){
+      if (arr[i]===parseInt(num )){
+        position.push(i)
+      }
+      
+    }
+    console.log(position)
+  }
+   </script>
+ </body>
+ </html>

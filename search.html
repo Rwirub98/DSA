@@ -6,27 +6,19 @@
   <title>Search</title>
 </head>
 <body>
-   <input text="search" placeholder=" enter value" id="searchE">
-  <button onClick="searchElement()">search element</button>
+ 
+  
   <script>
 
-    function searchElement(){
-    let num=[1,43,23,44,22,11,32,12,23];
-    let searchI=document.getElementById('searchE').value
-    let position=[];
-
-    for(i=0;i<num.length;i++){
-        if (num[i]==parseInt(searchI)){
-          position.push(i);
-             
-         }
-      }
-    console.log(position);
-    }
-    //console.log(num.indexOf(searchI))
-    //num.splice(2,3)
-    //console.log(num)
-
+let arr = [1,2,3,4,5]
+let item = 4
+let position=[]
+for (let i=position; i<arr.length-1;i++){
+  if(arr[i]==item){
+    position=i;
+  }
+}
+console.log(position)
 
   </script>
   

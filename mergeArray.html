@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>merger</title>
+</head>
+<body>
+  <script>
+    let arr=[1,2,3,4,5]
+    let arr1=[11,22,112,11]
+    let arr2=[]
+
+    for(let i=0; i<arr.length;i++){
+      arr2[i]=arr[i];
+    }
+    for(let i=0; i<arr1.length;i++){
+      arr2[arr.length+i]=arr1[i];
+    }
+    console.log(arr2)
+
+//reverse array
+
+    let as = [1,2,3]
+    as.reverse()
+    console.log(as)
+
+//default merge array
+ let arr0 =[1,2,3]
+ let arr4=[4,5,6]
+  let result = [...arr0,...arr4]
+  console.log(result)
+
+
+
+
+  </script>
+</body>
+</html> 

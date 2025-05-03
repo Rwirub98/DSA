@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>merge-array-while loop</title>
+</head>
+
+<body>
+  <script>
+
+    //array need to be sorted in while loop
+    let arr1 = [2, 3, 14, 15, 16];
+    let arr2 = [12, 34,];
+    let arr3 = [];
+    let d1 = 0;
+    let d2 = 0;
+    let d3 = 0;
+
+    while (d1 < arr1.length && d2 < arr2.length) {
+      if (arr1[d1]<arr2[d2]) {
+        arr3[d3] = arr1[d1];
+
+        d1++;
+
+      } else {
+        arr3[d3] = arr2[d2];
+        d2++;
+
+      }
+      d3++;
+    }
+    //because arr2 length is short and arr1 length is longer once it complete checking and arr2 length then it will stop merging . so we need to do  arr1.
+    while(d1<arr1.length){
+      arr3[d3]=arr1[d1]// now whatever inputs are there d1 it will take remaininng input of arr1 and store it into d3
+      d1++;
+      d3++;
+    }
+    console.log(arr3)
+    
+
+  </script>
+</body>
+
+</html>
